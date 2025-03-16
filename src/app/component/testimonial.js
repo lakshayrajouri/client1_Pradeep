@@ -43,7 +43,9 @@ export default function Testimonial() {
       <div>
         <h3 className="mt-2 font-semibold">{testimonials[current].name}</h3>
         <h4>{testimonials[current].position}</h4>
-        <p className="text-lg italic">"{testimonials[current].text}"</p>
+        <p className="text-lg italic">
+          &quot;{testimonials[current].text}&quot;
+        </p>
       </div>
       <button onClick={nextSlide} className={styles.button}>
         &#10095;
