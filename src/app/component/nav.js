@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import styles from "../styles/navfoot.module.css";
 import { useState } from "react";
 
@@ -10,7 +11,7 @@ export default function Nav() {
       <h1>Company Name</h1>
       <ul className={styles.ul}>
         <li className={styles.navLi}>
-          <a href="/">Home</a>
+          <Link href={"/"}>Home</Link>
         </li>
         <li className={styles.navLi}>
           <span
