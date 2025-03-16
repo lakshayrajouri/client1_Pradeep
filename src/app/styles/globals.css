@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+a{
+  text-decoration: none;
+}
+
+section{
+  margin: 3rem 5rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+h3{
+  font-size: 2rem;
+  font-weight: 400;
+}
