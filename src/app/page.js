@@ -5,7 +5,23 @@ import Testimonial from "./component/testimonial";
 export default function Home() {
   return (
     <div>
-      <section className={styles.banner}></section>
+      <section className={`${styles.banner} ${styles.slideUpp}`}>
+        <div className={styles.bannerDiv}>
+          <div className={styles.bannerBase}></div>
+          <div className={styles.bannerContent}>
+            <div>
+              <hr />
+              <h1>
+                YOUR COMPANY <br /> NAME
+              </h1>
+            </div>
+            <div>
+              <p>Architecture for Inspired Living</p>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className={styles.slideShow}>
         <div className={styles.slides}>
           <div className={`${styles.item} ${styles.item1}`}>1</div>

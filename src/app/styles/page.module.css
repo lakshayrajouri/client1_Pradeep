@@ -1,14 +1,76 @@
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*
+.slideUpp {
+  animation: slideUp 0.8s ease-out;
+} */
+
 /************************banner**********************************/
 .banner {
   background-image: url('../../../public/images/banner.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
 }
+
+.bannerDiv{
+  position: relative;
+  height: 35rem;
+  width: 30rem;
+  overflow: hidden;
+  margin-left: 8rem;
+  padding-top: 6rem;
+}
+
+@keyframes scrollRight{
+  from{
+    transform: translateX(-30rem);
+  }
+  to{
+    transform: translateX(0);
+  }
+ }
+
+
+.bannerBase{
+  position: absolute;
+  background-color: #333;
+  height: 100%;
+  width: 100%;
+  animation: scrollRight 0.8s ease-out;
+}
+
+/* .bannerRoof{
+  position: absolute;
+} */
+
+.bannerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 84%;
+  width: 100%;
+  position: absolute;
+  color: white;
+  opacity: 0; /* Hidden initially */
+  animation: slideUp 0.8s ease-out forwards;
+  animation-delay: 1s; /* Delayed until bannerBase completes */
+  padding: 2rem;
+}
+.bannerContent hr{
+  margin: 1rem 0;
+}
+
+
 /************************banner**********************************/
 
 /*************************projects*******************************/
@@ -63,8 +125,6 @@
 }
 
 /*************************projects*******************************/
-
-
 
 /*************************slideShow******************************/
 .slides{
